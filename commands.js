@@ -21,12 +21,14 @@ function createAppointment(event) {
     if (finished) return;
     finished = true;
     try {
-    if (error && item && item.notificationMessages) {
-      item.notificationMessages.replaceAsync("appointmentError", {
-        type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
-        message: String(error.message || error).slice(0, 150)
-      }, () => {});
-    }
+      if (error && item && item.notificationMessages) {
+        item.notificationMessages.replaceAsync("appointmentError", {
+          type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
+          message: String(error.message || error).slice(0, 150)
+        }, () => {});
+      }
+    } catch (_) {
+      // A notification failure must not prevent the command from completing.
     } finally {
       event.completed();
     }
