@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>b7dcd037-f0c9-4431-8851-7f74f5a01ace</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.1.0</Version>
   <ProviderName>Email to Appointment</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Create Appointment"/>
   <Description DefaultValue="Copy an email subject and text into a personal appointment draft."/>
-  <IconUrl DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/icon-80.png"/>
+  <IconUrl DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/appointment-icon-64-v1.png"/>
+  <HighResolutionIconUrl DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/appointment-icon-80-v1.png"/>
   <SupportUrl DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public"/>
   <AppDomains><AppDomain>https://monkeygrind.github.io</AppDomain></AppDomains>
   <Hosts><Host Name="Mailbox"/></Hosts>
@@ -31,7 +31,7 @@
       </Group></OfficeTab></ExtensionPoint>
     </DesktopFormFactor></Host></Hosts>
     <Resources>
-      <bt:Images><bt:Image id="Icon.16" DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/icon-16.png"/><bt:Image id="Icon.32" DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/icon-32.png"/><bt:Image id="Icon.80" DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/icon-80.png"/></bt:Images>
+      <bt:Images><bt:Image id="Icon.16" DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/appointment-icon-16-v1.png"/><bt:Image id="Icon.32" DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/appointment-icon-32-v1.png"/><bt:Image id="Icon.80" DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/appointment-icon-80-v1.png"/></bt:Images>
       <bt:Urls><bt:Url id="Commands.Url" DefaultValue="https://monkeygrind.github.io/outlook-create-appointment-public/commands.html"/></bt:Urls>
       <bt:ShortStrings><bt:String id="Group.Label" DefaultValue="Personal calendar"/><bt:String id="Button.Label" DefaultValue="Create Appointment"/></bt:ShortStrings>
       <bt:LongStrings><bt:String id="Button.Description" DefaultValue="Open an appointment with this email's subject and text, with no attendees."/></bt:LongStrings>
